@@ -1,0 +1,7 @@
+{
+  "name": "DuoPan-Profile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
