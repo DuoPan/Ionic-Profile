@@ -1,7 +1,10 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
 import BasicInfoCard from './BasicInfoCard';
 import './BasicInfoCard.css';
+import ButtonItem from '../../basic/ButtonItem';
+import { book, people, gameController } from 'ionicons/icons';
+import ButtonGroup from '../../basic/ButtonGroup';
 
 const AboutMe: React.FC = () => {
   return (
@@ -14,6 +17,11 @@ const AboutMe: React.FC = () => {
           experience={3}
           rate={5.0}
         />
+        <ButtonGroup>
+          <ButtonItem label='Skills' icon={book}/>
+          <ButtonItem label='Hobbies' icon={gameController}/>
+          <ButtonItem label='Social Relationships' icon={people}/>
+        </ButtonGroup>
       </IonContent>
     </IonPage>
   );

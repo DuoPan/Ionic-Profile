@@ -26,7 +26,7 @@ const BasicInfoCard: React.FC<BasicInfoCardProps> = ({
         <IonText color='light'>{rate.toFixed(1)}</IonText>
       </div>
       <IonAvatar style={{width: 80, height: 80}}>
-        <img src={avatarPath} />
+        <img src={avatarPath} alt='avatar' />
       </IonAvatar>
       <IonText color='light'><h5  style={{marginBottom: 0}}>{name}</h5></IonText>
       <IonText color='light'><h6 style={{marginTop: 4}}>{title}</h6></IonText>
