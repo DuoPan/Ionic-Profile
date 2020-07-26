@@ -18,9 +18,9 @@ const AboutMe: React.FC = () => {
           rate={5.0}
         />
         <ButtonGroup>
-          <ButtonItem label='Skills' icon={book}/>
-          <ButtonItem label='Hobbies' icon={gameController}/>
-          <ButtonItem label='Social Relationships' icon={people}/>
+          <ButtonItem label='Skills' icon={book} toUri={'/about-me/skills'} />
+          <ButtonItem label='Hobbies' icon={gameController} toUri={'/about-me/skills'} />
+          <ButtonItem label='Social Relationships' icon={people} toUri={'/about-me/skills'} />
         </ButtonGroup>
       </IonContent>
     </IonPage>

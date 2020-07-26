@@ -14,6 +14,7 @@ import { ellipse, bodyOutline, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import AboutMe from './pages/AboutMePage/AboutMe';
+import Skills from './pages/SkillsPage/Skills';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -33,6 +34,9 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { createBrowserHistory } from 'history';
+
+export const history = createBrowserHistory();
 
 const App: React.FC = () => (
   <IonApp>
@@ -41,7 +45,8 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route path="/tab1" component={Tab1} exact={true} />
           <Route path="/tab2" component={Tab2} exact={true} />
-          <Route path="/about-me" component={AboutMe} />
+          <Route path="/about-me" component={AboutMe} exact={true} />
+          <Route path="/about-me/skills" component={Skills} exact={true} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
